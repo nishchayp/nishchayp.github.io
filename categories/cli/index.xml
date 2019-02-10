@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cli on Nishchay Parashar</title>
+    <link>https://nishchayp.github.io/categories/cli/</link>
+    <description>Recent content in Cli on Nishchay Parashar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>nishchayparashar98@gmail.com (Nishchay Parashar)</managingEditor>
+    <webMaster>nishchayparashar98@gmail.com (Nishchay Parashar)</webMaster>
+    <lastBuildDate>Sun, 10 Feb 2019 21:07:55 +0530</lastBuildDate>
+    
+	<atom:link href="https://nishchayp.github.io/categories/cli/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>fifawc - CLI app to track FIFA World Cup 2018</title>
+      <link>https://nishchayp.github.io/post/code/fifawc/</link>
+      <pubDate>Sun, 10 Feb 2019 21:07:55 +0530</pubDate>
+      <author>nishchayparashar98@gmail.com (Nishchay Parashar)</author>
+      <guid>https://nishchayp.github.io/post/code/fifawc/</guid>
+      <description>fifawc A small CLI app to track FIFA World Cup 2018.
+About fifawc is a CLI app written in Go to help developers keep track of the ongoing FIFA World Cup 2018 without leaving their terminals. The app uses football-data.org API to provide data.
+Installation Pre-requisite - Install Go - Set PATH variable
+Get and Install fifawc app with the command: &amp;gt; go get -u github.com/nishchayp/fifawc
+To run fifawc app from across the system copy fifawc binary to directory pointed by PATH environmental variable.</description>
+    </item>
+    
+  </channel>
+</rss>

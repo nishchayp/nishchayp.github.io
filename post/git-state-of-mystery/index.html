@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>Git State of Mystery &middot; Nishchay Parashar</title>
+
+  
+  <link rel="stylesheet" href="https://nishchayp.github.io/css/poole.css">
+  <link rel="stylesheet" href="https://nishchayp.github.io/css/hyde.css">
+  <link rel="stylesheet" href="https://nishchayp.github.io/css/poole-overrides.css">
+  <link rel="stylesheet" href="https://nishchayp.github.io/css/hyde-overrides.css">
+  <link rel="stylesheet" href="https://nishchayp.github.io/css/hyde-x.css">
+  <link rel="stylesheet" href="https://nishchayp.github.io/css/highlight/sunburst.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://nishchayp.github.io/touch-icon-144-precomposed.png">
+  <link href="https://nishchayp.github.io/favicon.png" rel="icon">
+
+  
+  
+  
+  
+
+  <meta name="description" content="Git is an elegant tool and is considered by many a necessity for collaborative projects. To truly understand Git and start benefiting from all its neat commands it is of utmost importance that one understands at least the very basics - the different states of a file while working with Git.">
+  <meta name="keywords" content="Git">
+  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      
+      <h1>Nishchay Parashar</h1>
+      <p class="lead">Learn. Apply. Repeat.</p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="https://nishchayp.github.io/"></a></li>
+      
+      <li class="sidebar-nav-item"><i class='fa fa-home'></i><a href="https://nishchayp.github.io/"> Home</a></li>
+      
+      <li class="sidebar-nav-item"><i class='fa fa-user'></i><a href="https://nishchayp.github.io/about-me/"> About Me</a></li>
+      
+      <li class="sidebar-nav-item"><i class='fa fa-keyboard-o'></i><a href="https://nishchayp.github.io/categories/code"> Coding Adventures</a></li>
+      
+      <li class="sidebar-nav-item"><i class='fa fa-rss'></i><a href="https://nishchayp.github.io/categories/blog"> Blog</a></li>
+      
+      <li class="sidebar-nav-item"><i class='fa fa-file'></i><a href="https://nishchayp.github.io/docs/resume.pdf"> Resume</a></li>
+      
+    </ul>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item">
+      <a href="mailto:nishchayparashar98@gmail.com"><i class="fa fa-envelope-square fa-3x"></i></a>
+      <a href="https://github.com/nishchayp"><i class="fa fa-github-square fa-3x"></i></a>
+      
+      
+      <a href="https://www.linkedin.com/in/nishchayp/"><i class="fa fa-linkedin-square fa-3x"></i></a>
+      
+      
+      
+      
+      
+      </li>
+    </ul>
+
+    
+
+    <p>Copyright &copy; 2019 <a href="https://creativecommons.org/licenses/by/4.0/">License</a></p>
+
+
+  </div>
+</div>
+
+
+<div class="content container">
+  <div class="post">
+    <h1 class="post-title">Git State of Mystery</h1>
+    <span class="post-date">Feb 10, 2019 &middot; 6 minute read
+    
+    <br/>
+    <a class="label" href="https://nishchayp.github.io/categories/blog">blog</a><a class="label" href="https://nishchayp.github.io/categories/git">Git</a>
+    </span>
+    
+
+<h1 id="explaination-of-the-three-states">Explaination of the three states</h1>
+
+<p>As teams get bigger and projects more complex there arises a need for tools which can keep track of all the changes made to the project by each team member, allow each member to work on their copies of the project simultaneously without breaking the project for each other, help collaborate and combine the changes made by different members, rollback certain changes and a whole lot more, all for the sake of efficient workflow of the project and effective collaboration between team members. To achieve all this and much more, there comes into the picture this seemingly magical but in reality, a well designed and intelligent tool know as Git. Git as it says on its official website <em>&rdquo; is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency&rdquo;</em>.<br />
+To try and understand how to use Git to our advantage and equally or perhaps more importantly understand how Git works behind the curtains to makes all this sorcery possible we will have to understand the 3 different states in which our files can exist while working with Git, which are <em>modified state</em>, <em>staged state</em> and <em>committed state</em>.
+But before we start with the fun part of demystifying the mystic Git file states we will have to eat some of our <em>vegetables</em>, that is, we need to understand some basics about Git. On a high-level Git works by collecting complete snapshots of the project at different times in an orderly fashion and then helping us manage these snapshots. These snapshots contain all the files in all the branches of the project at that particular time and Git can help users add new snapshots, merge different snapshots, revert to an older snapshot and execute a whole range of other important procedures with these snapshots.<br />
+Now finally to the part for which we came here, let&rsquo;s start exploring and understanding the 3 states in which a file can exist in while using Git.</p>
+
+<h3 id="modified-state">Modified State</h3>
+
+<p>Modified state probably has the most descriptive name of a state among the 3 we are going to discuss and so as the name suggests a file is in the modified state, well, when it is modified as simple as that. As we now know Git works by managing snapshots of our projects and these snapshots, in a way, contain all the files and their contents at the time of the snapshot. Therefore, it is desirable to know if there has been any change in the project since the last snapshot, may it be the addition or deletion of a single character in a file inside the project repository or the addition or deletion of complete files themselves. Each and every file being tracked by Git, whenever goes through any small or large change the file gets into the modified state.<br />
+To check the state of all the files in the repository we can use the command <code>git status</code> and to check the state of a sub-directory or a file the command can be used with the desired path as an argument <code>git status [path/to/file]</code>. Another useful command is the <code>git diff</code> command which outputs the modifications that have taken place in the repository since the last snapshot or <code>git diff [path/to/file]</code> which outputs the modifications in the specified file.<br />
+To understand this through a metaphor, think of yourself as a photographer. So, you have clicked a photograph and now would like to click another one, you look through the lens and set a frame. Now, if everything in the frame is exactly the same as the last photograph you clicked then it is somewhat safe to say that there is no need of clicking a new photograph, but as soon as there occurs any change at all in the frame then now you can say that you are looking at a modified state.</p>
+
+<h3 id="staged-state">Staged State</h3>
+
+<p>Staged state of a file is when you have decided that you would like the file, which previously was in modified state to be present with all its changes in the next snapshot. It could be thought of as a pre-final state before finally, the file goes into the committed state(more on this later). The file that enters the staged state is said to be added to the staging area and now is ready to be in the next snapshot, any changes done to the file after it has been staged will not be present in the next snapshot unless and until it is once again staged with all these new changes.<br />
+Once again, the command <code>git status</code> can be used to find out the state of the file/files. The command used to add files into the staging area, that is, to change their state to staged state is <code>git add [path/to/file]</code> and a neat way to add all the modified files in the repository to staging area is by using the <code>git add .</code> command.<br />
+To continue with our metaphor, the staging state is similar to clicking a photograph. The content of the frame at that time and in that condition would be saved in the memory of the camera, any more changes in the frame would not be captured in the photograph as it has already been clicked and so the only way to capture these changes are by again clicking a photograph with the changed frame.</p>
+
+<h3 id="committed-state">Committed State</h3>
+
+<p>Committed stage is the final state that the file would be in locally at your system. It is the committed state of a file that ends up in a snapshot. All files which were previously in the staged state, that is, files added to the staging area, after the command to commit change their state from staged state to committed state. Git packages all the content of the staging area into a single commit which can be used to refer to the snapshot of the repository at that moment of time. Each commit also points to its predecessor commit and thus when these commits are pushed to the remote repository then they should not be deleted or tampered with as other collaborators&rsquo; commits may link to these commits. Thus files in committed state represent files that will be present in the snapshot of the repository.<br />
+The command used to change the state of all the files in the staging area from staged state to committed state and thus package all of them into a commit is <code>git commit -m &quot;message&quot;</code>, here the option <code>-m</code> with the <em>message</em> as a string argument is used to attach a meaningful message along with the commit which would help you and other collaborators to understand why the commit was made.<br />
+Now, going back to our metaphor once again, the committed state of a file is analogous to getting the photograph we had in the memory of the camera and printing it out. Now, this photograph is immutable and represents everything present in the frame at the moment of time when the photograph was clicked. Therefore, pushing the commit onto remote repository could be thought of as pasting this photograph in a shared scrapbook for all who have the access to the scrapbook to see. Other collaborators may add their photographs in the scrapbook and thus, removing a photograph from the scrapbook would leave a blank space and thus destroy the integrity of the scrapbook.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+<script src="https://nishchayp.github.io/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
+

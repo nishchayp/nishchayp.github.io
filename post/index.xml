@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Nishchay Parashar</title>
+    <link>https://nishchayp.github.io/post/</link>
+    <description>Recent content in Posts on Nishchay Parashar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>nishchayparashar98@gmail.com (Nishchay Parashar)</managingEditor>
+    <webMaster>nishchayparashar98@gmail.com (Nishchay Parashar)</webMaster>
+    <lastBuildDate>Sun, 10 Feb 2019 21:07:55 +0530</lastBuildDate>
+    
+	<atom:link href="https://nishchayp.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>fifawc - CLI app to track FIFA World Cup 2018</title>
+      <link>https://nishchayp.github.io/post/code/fifawc/</link>
+      <pubDate>Sun, 10 Feb 2019 21:07:55 +0530</pubDate>
+      <author>nishchayparashar98@gmail.com (Nishchay Parashar)</author>
+      <guid>https://nishchayp.github.io/post/code/fifawc/</guid>
+      <description>fifawc A small CLI app to track FIFA World Cup 2018.
+About fifawc is a CLI app written in Go to help developers keep track of the ongoing FIFA World Cup 2018 without leaving their terminals. The app uses football-data.org API to provide data.
+Installation Pre-requisite - Install Go - Set PATH variable
+Get and Install fifawc app with the command: &amp;gt; go get -u github.com/nishchayp/fifawc
+To run fifawc app from across the system copy fifawc binary to directory pointed by PATH environmental variable.</description>
+    </item>
+    
+    <item>
+      <title>Git State of Mystery</title>
+      <link>https://nishchayp.github.io/post/git-state-of-mystery/</link>
+      <pubDate>Sun, 10 Feb 2019 20:39:57 +0530</pubDate>
+      <author>nishchayparashar98@gmail.com (Nishchay Parashar)</author>
+      <guid>https://nishchayp.github.io/post/git-state-of-mystery/</guid>
+      <description>Explaination of the three states As teams get bigger and projects more complex there arises a need for tools which can keep track of all the changes made to the project by each team member, allow each member to work on their copies of the project simultaneously without breaking the project for each other, help collaborate and combine the changes made by different members, rollback certain changes and a whole lot more, all for the sake of efficient workflow of the project and effective collaboration between team members.</description>
+    </item>
+    
+  </channel>
+</rss>
