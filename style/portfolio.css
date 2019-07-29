@@ -1,0 +1,26 @@
+.projects {
+
+}
+
+.project-card {
+	width: 90vw;
+	padding: 1vh 2vw;
+	border-radius: 5px;
+	box-shadow: 0 0 16px rgba(34, 39, 37, 0.3);
+	margin: auto auto;
+}
+.project-card .name {
+	font-size: 2rem;
+	text-align: center;
+	font-weight: lighter;
+}
+.project-card .skills {
+	font-size: 0.75rem;
+}
+.project-card .project-footer ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	width: 20%;
+	margin: 1vh auto;
+}
