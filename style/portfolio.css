@@ -1,26 +1,56 @@
-.projects {
+* {
+    font-family: 'Inconsolata', monospace;
+    color: #333333;
+}
 
+body {
+    background-image: url("art.jpg");
+    background-size: cover;
+	padding: 5vh 10vw;
+}
+
+.heading {
+	text-align: center;
+}
+.heading h2 {
+	font-size: 4rem;
+	margin: 0;
+	font-weight: lighter;
+}
+
+.projects {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .project-card {
-	width: 90vw;
-	padding: 1vh 2vw;
+	background-color: #f8f8f8;
+	height: 45vh;
+	width: 25vw;
+	padding: 0 2vw;
 	border-radius: 5px;
-	box-shadow: 0 0 16px rgba(34, 39, 37, 0.3);
 	margin: auto auto;
+	transition: 0.3s;
+	margin: 1rem;
+	overflow: scroll;
+}
+.project-card:hover {
+	box-shadow: 0 0 16px rgba(34, 39, 37, 0.3);
 }
 .project-card .name {
 	font-size: 2rem;
 	text-align: center;
 	font-weight: lighter;
 }
-.project-card .skills {
-	font-size: 0.75rem;
-}
-.project-card .project-footer ul {
-	list-style: none;
+.project-card .project-footer {
 	display: flex;
 	justify-content: space-between;
-	width: 20%;
-	margin: 1vh auto;
+	margin: 1vh 5vw;
+}
+.project-card .project-footer a {
+	text-decoration: none;
+}
+.project-card .project-footer a:hover {
+	text-decoration: underline;
 }
