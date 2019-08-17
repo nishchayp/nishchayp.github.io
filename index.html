@@ -1,39 +1,315 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="./assets/favicon.png">
+	<!-- Author Meta -->
+	<meta name="author" content="Nishchay Parashar">
+	<!-- Meta Description -->
+	<meta name="description" content="Nishchay Parashar's personal website">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="Nishchay Parashar, personal website, portfolio">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
 	<title>Nishchay Parashar</title>
+	<!-- Normalize CSS -->
+	<link rel="stylesheet" type="text/css" href="./style/normalize.css">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lexend+Peta|Noto+Serif&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Main stylesheet -->
 	<link rel="stylesheet" type="text/css" href="./style/index.css">
 </head>
 <body>
-	<div class="box">
-		<div class="content">
-			<p class="name">
-				Nishchay Parashar
-			</p>
-			<p class="titles">
-				
-			</p>
-			
-			<p>
-				 Hi, I'm an undergrad student presently persuing my engineering degree with major in Computer Science & Engineering along with a minor in Big Data. Have gained industry exposure in Software Development through multiple internships. I enjoy working with other humans and am presently leading a community of 2500+ student on campus as General Secretary of the CS club of my university. I love attending and conducting tech talks, meet-ups and workshops. I also presently am the GitHub Campus Expert selected by GitHub Education for my university. Software Development, Data Structures & Algorithms, Backend Development and DevOps are some of the domains where my heart is at though I love taking up new challenges and learning new skills.
-			</p>
-			<p>
-				When I’m not in front of the terminal, you can find me at the tennis court or trying out new restaurants :) 
-			</p>
-			<div class="redirects">
-				<div class="sites">
-					<span><i class="fa fa-keyboard-o"></i><a href="./portfolio.html"> Portfolio</a></span>
-					<span><i class="fa fa-rss"></i><a href="http://blog.nishchayp.tk/"> Blog</a></span>
-					<span><i class="fa fa-file"></i><a href="https://nishchayp.github.io/docs/resume.pdf"> Resume</a></span>
-				</div>
-				<div class="social">
-					<span><i class="fa fa-github-square fa-3x"></i></span>
-					<span><i class="fa fa-linkedin-square fa-3x"></i></span>
-					<span><i class="fa fa-envelope-square fa-3x"></i></span>
+	<section class="navbar" id="navbar">
+		<span class="nishchayp"><a href="http://nishchayp.tk/">nishchayp</a></span>
+		<div class="menu" id="menu">
+			<button onclick="openNavmenu()">Menu</button>
+		</div>
+	</section>
+
+	<section id="navmenu">
+		<div class="hero-footer">
+			<a href="#about"><span class="opaque">A</span><span class="transparent">bout</span></a>
+			<a href="#experience"><span class="opaque">E</span><span class="transparent">xperience</span></a>
+			<a href="#works"><span class="opaque">W</span><span class="transparent">orks</span></a>
+			<a href="https://nishchayp.github.io/docs/resume.pdf"><span class="opaque">R</span><span class="transparent">esume</span></a>
+			<a href="#contact"><span class="opaque">C</span><span class="transparent">ontact</span></a>
+		</div>
+		<button onclick="closeNavmenu()">X</button>
+	</section>
+
+	<section class="hero">
+		<div class="name">
+			<span>Nishchay Parashar</span><span id="full-stop">.</span>
+		</div>
+		<div class="flash-container">
+			<div class="flash" id="flash">
+				<div class="content">
+					<a href="" class="typewrite" data-period="2000" data-type='[ "Software Developer", "Backend Engineer", "GitHub Campus Expert", "Community Leader", "CSE Undergraduate"]'>
+					<span class="wrap"></span>
+					</a>
 				</div>
 			</div>
 		</div>
-	</div>
+		<div class="brand">
+			<span><a target="_blank" href="https://github.com/nishchayp"><i class="fa fa-github-square fa-2x"></i></a></span>
+			<span><a target="_blank" href="https://www.linkedin.com/in/nishchayp/"><i class="fa fa-linkedin-square fa-2x"></i></a></span>
+			<span><a target="_blank" href="mailto:nishchayparashar98@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a></span>
+			<span><a target="_blank" href="http://blog.nishchayp.tk/"><i class="fa fa-rss-square fa-2x"></i></a></span>
+		</div>
+		<div class="hero-footer">
+			<a href="#about"><span class="opaque">A</span><span class="transparent">bout</span></a>
+			<a href="#experience"><span class="opaque">E</span><span class="transparent">xperience</span></a>
+			<a href="#works"><span class="opaque">W</span><span class="transparent">orks</span></a>
+			<a href="https://nishchayp.github.io/docs/resume.pdf"><span class="opaque">R</span><span class="transparent">esume</span></a>
+			<a href="#contact"><span class="opaque">C</span><span class="transparent">ontact</span></a>
+		</div>
+	</section>
+
+	<section class="about" id="about">
+		<div class="heading-container">
+			<img src="./assets/me.jpg">
+			<span class="section-heading">Hi, I'm Nishchay</span>
+		</div>
+		<p>
+			A final year undergrad student presently persuing my engineering degree with major in <b>Computer Science & Engineering</b> along with a minor in <b>Big Data</b>. I enjoy working with other humans and am presently <b>leading a community of 2500+</b> student on campus as General Secretary of the CS club of my university. I also one among the less than 200 <b>GitHub Campus Experts</b> across the globe and the only one in my university. <b>Software Development, Data Structures & Algorithms, Backend Engineering</b> and <b>DevOps</b> are some of the domains where my heart is at and I have further explored these intrests of mine through <b>multilpe internships and projects</b>, that being said, I love taking up new challenges and learning new skills.
+		<br>
+			When I’m not in front of the terminal, you can find me at the tennis court or trying out new restaurants :) 
+		</p>
+	</section>
+
+	<section class="experience" id="experience">
+		<span class="section-heading">Experience</span>
+		<div class="exp-card-container">
+
+			<div class="exp-card">
+				<div class="exp-heading">
+					<div class="main-line">
+						<div class="post">GitHub Campus <br>Expert</div>
+						<img src="./assets/github.jpg">
+					</div>
+					<div class="sub-line">
+						<div class="company">GitHub Education, Remote</div>
+						<div class="date">Sep '18 - Present</div>
+					</div>
+				</div>
+				<div class="exp-details">
+					<ul>
+						<li>Selected by GitHub from a global application pool as a Campus Expert on the basis of proficiency in Git and work towards community building.</li>
+						<li>Secured sponsorship of USD 750 from GitHub for organizing events for the tech community on campus.</li>
+						<li>Trained by GitHub in community management and software development. Conducted multiple workshops, taught Git to 300+ students.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="exp-card">
+				<div class="exp-heading">
+					<div class="main-line">
+						<div class="post">Software Developer Intern</div>
+						<img src="./assets/physiz.png">
+					</div>
+					<div class="sub-line">
+						<div class="company">Physiz Agtech, Mumbai</div>
+						<div class="date">May '19 - Jul '19</div>
+					</div>
+				</div>
+				<div class="exp-details">
+					<ul>
+						<li>Worked on backend development for the company’s core product implementing multiple major features and developing 30+ API routes enabling the team to stay on track for their global release.</li>
+						<li>Designed and built an automated testing solution from scratch increasing code coverage from 0% to over 60%.</li>
+						<li>Took on DevOps responsibility by setting up CI/CD, API Gateway and managing IOT devices over the cloud.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="exp-card">
+				<div class="exp-heading">
+					<div class="main-line">
+						<div class="post">General <br>Secretary</div>
+						<img src="./assets/iecse.png">
+					</div>
+					<div class="sub-line">
+						<div class="company">IECSE, Manipal</div>
+						<div class="date">May '19 - Jul '19</div>
+					</div>
+				</div>
+				<div class="exp-details">
+					<ul>
+						<li>Worked on backend development for the company’s core product implementing multiple major features and developing 30+ API routes enabling the team to stay on track for their global release.</li>
+						<li>Designed and built an automated testing solution from scratch increasing code coverage from 0% to over 60%.</li>
+						<li>Took on DevOps responsibility by setting up CI/CD, API Gateway and managing IOT devices over the cloud.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="exp-card">
+				<div class="exp-heading">
+					<div class="main-line">
+						<div class="post">Web <br>Admin</div>
+						<img src="./assets/nebula.png">
+					</div>
+					<div class="sub-line">
+						<div class="company">Nebula Infomatique, Delhi</div>
+						<div class="date">May '17 - Jul '17</div>
+					</div>
+				</div>
+				<div class="exp-details">
+					<ul>
+						<li>Developed <a href="http://nebulainfomatique.com">company website</a> along with setting up mail servers and providing tech support and training.</li>
+						<li>The website has a Google speed score of 97(Mobile) & 100(Desktop) while the competitor’s website has a score of 5(Mobile) & 63(Desktop).</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="works" id="works">
+		<span class="section-heading">Works</span>
+		<div class="works-container">
+
+			<div class="works-container-lhs">
+				
+				<div class="work" id="gocompiler">
+					<video autoplay loop>
+						<source src="./assets/gocompiler.webm" type="video/webm">
+						Your browser does not support the video tag.
+					</video>
+					<div class="project-card">
+						<p class="name">Go Compiler</p>
+						<p>A partial compiler(lexical analyzer) with error reporting and error recovery for Go(Golang) developed using C, Flex & Bison.</p>
+						<div class="project-footer">
+							<span><i class="fa fa-code"></i> <a href="https://github.com/nishchayp/web-go-compiler">Code</a></span>
+							<span><i class="fa fa-window-restore"></i> <a href="http://gocompiler.nishchayp.tk/">Demo</a></span>
+							<span><i class="fa fa-rss"></i> <a href="http://blog.nishchayp.tk/post/code/go-compiler/">Blog</a></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="work" id="damn">
+					<video autoplay loop>
+						<source src="./assets/damn.webm" type="video/webm">
+						Your browser does not support the video tag.
+					</video>
+					<div class="project-card">
+						<p class="name">DAMN - SSH Keys Distribution and Management Network</p>
+						<p>Developed web application for securely requesting, granting and revoking access to servers by managing the SSH keys of all node servers through one single central server on the go with the provided web portal. Developed the complete backend using Golang while working with various APIs, OAuth protocol, scripting, databases and other technologies.</p>
+						<div class="project-footer">
+							<span><i class="fa fa-code"></i> <a href="https://github.com/nishchayp/DAMN">Code</a></span>
+							<span><i class="fa fa-rss"></i> <a href="http://blog.nishchayp.tk/post/code/DAMN/">Blog</a></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="work" id="plauto">
+					<video autoplay loop>
+						<source src="./assets/plauto.webm" type="video/webm">
+						Your browser does not support the video tag.
+					</video>
+					<div class="project-card">
+						<p class="name">Plauto - Parking Lot Automation System</p>
+						<p>Developed a web app to automate parking lot management as a project for Database System course. Undertook the development of the backend using Flask, frontend using HTML & CSS and integration of the web app with the database.</p>
+						<div class="project-footer">
+							<span><i class="fa fa-code"></i> <a href="https://github.com/nishchayp/parking-lot-automation">Code</a></span>
+							<span><i class="fa fa-rss"></i> <a href="http://blog.nishchayp.tk/post/code/plauto/">Blog</a></span>
+						</div>
+					</div>	
+				</div>
+
+			</div>
+
+			<div class="works-container-rhs">
+
+				<div class="work" id="tqi">
+					<video autoplay loop>
+						<source src="./assets/tqi.webm" type="video/webm">
+						Your browser does not support the video tag.
+					</video>
+					<div class="project-card">
+						<p class="name">Task-Queues Implementation</p>
+						<p>Since uploading large data sets handicaps the server to process further requests, I've used Celery to implement task queues with RabbitMQ as the broker so as to allow the uploading of data sets to be an asynchronous task.</p>
+						<div class="project-footer">
+							<span><i class="fa fa-code"></i> <a href="https://github.com/nishchayp/task-queues-implementaion">Code</a></span>
+							<span><i class="fa fa-window-restore"></i> <a href="http://tqi.nishchayp.tk/">Demo</a></span>
+							<span><i class="fa fa-rss"></i> <a href="http://blog.nishchayp.tk/post/code/task-queues-implementaion/">Blog</a></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="work" id="fifawc">
+					<video autoplay loop>
+						<source src="./assets/fifawc.webm" type="video/webm">
+						Your browser does not support the video tag.
+					</video>
+					<div class="project-card">
+						<p class="name">FIFAWC – CLI App</p>
+						<p>Developed a Command Line Interface (CLI) app using Golang and web APIs to track the FIFA World Cup 2018 by getting live scores, fixtures, team details and other statistics right from the terminal.</p>
+						<div class="project-footer">
+							<span><i class="fa fa-code"></i> <a href="https://github.com/nishchayp/fifawc">Code</a></span>
+							<span><i class="fa fa-rss"></i> <a href="http://blog.nishchayp.tk/post/code/fifawc/">Blog</a></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="work" id="hungrybot">
+					<video autoplay loop>
+						<source src="./assets/hungrybot.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+					<div class="project-card">
+						<p class="name">Hungry Bot</p>
+						<p>The hungry bot app is a chat bot built on Nodejs that helps keep track of your food intake, daily calorie count and much more. This bot is your personal food curator that tells you what you can and cannot eat while helping you find healthier alternatives.</p>
+						<div class="project-footer">
+							<span><i class="fa fa-code"></i> <a href="https://github.com/nishchayp/HealthyBot-MSBotFramework">Code</a></span>
+							<span><i class="fa fa-window-restore"></i> <a href="https://www.youtube.com/watch?v=i6T6MTLrY9s">Demo</a></span>
+							<span><i class="fa fa-rss"></i> <a href="http://blog.nishchayp.tk/post/code/hungry-bot/">Blog</a></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="work" id="atp-top10">
+					<video autoplay loop>
+						<source src="./assets/atp-top10.webm" type="video/webm">
+						Your browser does not support the video tag.
+					</video>
+					<div class="project-card">
+						<p class="name">Tennis ATP Top-10</p>
+						<p>A small app written in Go to drive Chrome browser to visit the official ATP website and capture a screenshot of the top 10 men singles tennis players in the world.</p>
+						<div class="project-footer">
+							<span><i class="fa fa-code"></i> <a href="https://github.com/nishchayp/atp-top10">Code</a></span>
+							<span><i class="fa fa-rss"></i> <a href="http://blog.nishchayp.tk/post/code/atp-top10/">Blog</a></span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<span class="section-heading">Get In Touch</span>
+		<div>
+			<span><a target="_blank" href="https://github.com/nishchayp"><i class="fa fa-github fa-2x"></i></a></span>
+			<span><a target="_blank" href="https://www.linkedin.com/in/nishchayp/"><i class="fa fa-linkedin fa-2x"></i></a></span>
+			<span><a target="_blank" href="https://www.instagram.com/nishchay.parashar/"><i class="fa fa-instagram fa-2x"></i></a></span>
+			<span><a target="_blank" href="https://www.facebook.com/nishchay.parashar"><i class="fa fa-facebook fa-2x"></i></a></span>
+		</div>
+		<div><a href="mailto:nishchayparashar98@gmail.com"><i class="fa fa-envelope"></i> nishchayparashar98@gmail.com</a></div>
+		<div><i class="fa fa-graduation-cap"></i> Manipal Institute of Technology, Manipal, KA, India</div>
+		<div><i class="fa fa-globe"></i> New Delhi, India</div>
+	</section>
+
+	<footer>
+		<span><i class="fa fa-code"></i> by <a href="http://nishchayp.tk/">Nishchay Parashar</a></span>
+	</footer>
+
+	<script type="text/javascript" src="./script/index.js"></script>
 </body>
 </html>

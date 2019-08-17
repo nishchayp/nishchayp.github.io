@@ -1,98 +1,403 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-*:focus {
-  outline: 0;
-}
-
 html {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	color: #333333;
+	font-family: 'Noto Serif', serif;
+	scroll-behavior: smooth;
 }
 
-body {
-	align-items: center;
-	background-color: #060c21;
-	display: flex;
-	font-family: 'Poppins', sans-serif;
-	justify-content: center;
-	min-height: 100vh;
+section {
+	margin-top: 5vh;
 }
 
-.box:before,
-.box:after {
-	background-color: #ffffff;
-	background-image: linear-gradient(
-											235deg,
-											#89ff00,
-											#060c21,
-											#00bcd4
-										);
-	bottom: -2px;
-	content: '';
-	left: -2px;
-	position: absolute;
-	right: -2px;
-	top: -2px;
-}
-
-.box:before {
-	z-index: -1;
-}
-
-.box {
-	align-items: center;
-	background-color: #060c21;
-	display: flex;
-	height: 80vh;
-	justify-content: center;
-	position: relative;
-	width: 60vw;
-}
-
-.box:after {
-	-webkit-filter: blur(40px);
-	        filter: blur(40px);
-	z-index: -2;
-}
-
-.content {
-	color: #ffffff;
-	padding: 3vw;
-	font-size: 1rem;
-	text-align: center;
-	font-weight: lighter;
-}
-
-.content .name {
-	font-size: 4rem;
-	font-weight: lighter;
-	margin: 1rem;
-}
-
-.redirects {
-	display: flex;
-	flex-direction: column;
-}
-
-.redirects .sites {
-	font-weight: normal;
-	font-size: 1.2rem;
-	display: flex;
-	flex-direction: column;
-	text-align: left;
-	margin: 1rem auto;
-}
-
-.redirects .sites a {
-	color: #ffffff;
+a {
 	text-decoration: none;
-	transition: 0.4s;
+	color: inherit;
 }
 
-.redirects .sites a:hover {
+.navbar {
+	display: flex;
+	position: fixed;
+	width: 94vw;
+	left: 0;
+	top: 0;
+	justify-content: space-between;
+	max-width: 100vw;
+	padding: 0 3vw;
+    font-family: 'Lexend Peta', sans-serif;
+    font-size: 1.5rem;
+    z-index: 100;
+}
+.navbar button {
+	background-color: rgba(255, 255, 255, 0);
+	border: none;
+	cursor: pointer;
+}
+
+#navmenu {
+	display: none;
+	position: fixed;
+	width: 94vw;
+	left: 0;
+	top: 0;
+    z-index: 100;
+    font-family: 'Lexend Peta', sans-serif;
+}
+#navmenu button {
+	background-color: #ffffff;
+	border: none;
+	cursor: pointer;
+	align-self: flex-end;
+}
+
+.hero {
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding: 5vh 5vw;
+}
+
+.name {
+	font-size: 5rem;
+}
+
+.flash-container {
+	width: 90vw;
+	height: 20vw;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+	position: relative;
+}
+.flash-container .flash {
+	width: 20vw;
+	height: 20vw;
+	display: flex;
+}
+.flash-container .flash .content {
+	padding: 0;
+    font-family: 'Lexend Peta', sans-serif;
+	font-size: 3rem;
+	background-color: #FFFFFF;
+	width: 100%;
+	align-self: center;
+	position: absolute;
+	text-align: center;
+	left: 0;
+	text-decoration: none;
+	color: #333333;
+}
+.flash-container .flash .content a {
+	color: #333333;
+	text-decoration: none;
+}
+.hero-footer {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	font-family: 'Lexend Peta', sans-serif; 
+}
+.hero-footer .opaque:hover ~ .transparent {
+	opacity: 1;
+}
+.hero-footer .transparent {
+	opacity: 0;
+	transition: 0.2s;
+}
+.hero-footer .transparent:hover {
+	opacity: 1;
+}
+
+.section-heading {
+	font-family: 'Lexend Peta', sans-serif;
+	font-size: 	3rem;
+}
+
+.about {
+	padding: 10vh 8vw;
+	text-align: justify; 
+	font-size: 1.5rem;
+}
+.about .heading-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.about .heading-container img {
+	border-radius: 100%;
+	width: 20vw;
+	margin: auto 2vw;
+}
+
+.experience {
+	padding: 10vh 8vw;
+}
+.exp-card-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+}
+.exp-card {
+	width: 37vw;
+	background-color: #fafafa;
+	padding: 4vh 2vw;
+	margin-top: 2.5vw;
+	transition: 0.2s;
+}
+.exp-card:hover {
+	background-color: #333333;
+	color: #fafafa;
+}
+.exp-card .exp-heading {
+	margin-bottom: 2vh;
+	font-family: 'Lexend Peta', sans-serif;
+}
+.exp-card .exp-heading .main-line {
+	display: flex;
+	justify-content: space-between;
+}
+.exp-card .exp-heading .main-line .post {
+	font-weight: bolder;
+	font-size: 1.5rem;
+}
+.exp-card .exp-heading .main-line img {
+	width: 5vw;
+	margin-bottom: 1vh;
+}
+.exp-card .exp-heading .sub-line {
+	display: flex;
+	justify-content: space-between;
+}
+.exp-card .exp-heading .sub-line .company {
+	font-weight: lighter;
+}
+.exp-card .exp-heading .sub-line .date {
+	white-space: nowrap;
+}
+.exp-card .exp-details ul {
+	padding: 0;
+	margin: 0;
+}
+.exp-card .exp-details li {
+	margin-top: 0.5rem;
+}
+.exp-card .exp-details a {
 	text-decoration: underline;
 }
 
+.works {
+	padding: 10vh 8vw;
+}
+.works-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.works-container-lhs {
+	width: 50vw;
+}
+.works-container-rhs {
+	width: 30vw;
+}
+.work {
+	border: 1px solid black;
+	position: relative;
+	margin-top: 4vh;
+	text-align: justify;
+}
+.work video {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	transition: 0.3s ease;
+}
+.work:hover video {
+	opacity: 0.3;
+}
+.work .project-card {
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: 0.3s ease;
+	background-color: rgba(180, 214, 211, 0.3);
+}
+.work:hover .project-card {
+	opacity: 1;
+}
+.work .project-card .name {
+	font-size: 1.5rem;
+	text-align: center;
+	font-family: 'Lexend Peta', sans-serif;
+}
+.work .project-card .project-footer {
+	display: flex;
+	justify-content: space-between;
+	margin: 1vh 2vw;
+	font-family: 'Lexend Peta', sans-serif;
+}
+.work .project-card .project-footer a:hover {
+	text-decoration: underline;
+}
+
+#gocompiler .project-card {
+	padding: 10% 10%;
+}
+#fifawc .project-card {
+	padding: 0 10%;
+}
+#hungrybot {
+	height: 65vh;
+}
+#hungrybot .project-card {
+	padding: 20% 5%;
+}
+#atp-top10 .project-card {
+	padding: 5% 10%;
+}
+#damn .project-card {
+	padding: 10% 10%;
+}
+#tqi .project-card {
+	padding: 0 1vw;
+}
+#plauto .project-card {
+	padding: 10% 10%;
+}
+
+.contact {
+	background-color: #333333;
+	color: #fafafa;
+	text-align: center;
+	padding: 10vh 8vw;
+}
+.contact div {
+	margin: 1rem auto;
+}
+
+footer {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 1vh 1vw;
+	background-color: #333333;
+	color: #fafafa;
+	text-align: right;
+}
+footer a {
+	text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+
+section {
+	margin-top: 1rem;
+}
+
+.about {
+	padding: 4vh 4vw;
+}
+.experience {
+	padding: 4vh 4vw;
+}
+.works {
+	padding: 4vh 4vw;
+}
+.contact {
+	padding: 4vh 4vw;
+}
+
+.section-heading {
+	font-size: 2rem;
+}
+
+.navbar {
+	font-size: 1rem;
+}
+
+#navmenu {
+	font-size: 0.75rem;
+}
+#navmenu button {
+	align-self: flex-start;
+}
+#navmenu .hero-footer {
+	flex-direction: column;
+	margin-left: 2vw;
+}
+
+.name {
+	font-size: 4rem;
+	text-align: center;
+}
+
+.flash-container {
+	height: 40vw;
+}
+.flash-container .flash {
+	width: 60%;
+	height: 100%;
+}
+.flash-container .flash .content {
+	font-size: 1.5rem;
+}
+
+.hero .hero-footer {
+	display: none;
+}
+
+.about {
+	text-align: center; 
+	font-size: 1rem;
+}
+.about .heading-container {
+	flex-direction: column;
+}
+
+.exp-card {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 2vh 1vw;
+	margin-top: 2.5vw;
+}
+.exp-card .exp-heading .main-line {
+	flex-direction: column;
+	text-align: center;
+}
+.exp-card .exp-heading .main-line img {
+	width: 3rem;
+	margin: 1rem auto;
+}
+.exp-card .exp-heading .sub-line {
+	flex-direction: column;
+	text-align: center;
+}
+
+.works-container {
+	flex-direction: column;
+}
+.works-container-lhs {
+	width: 100%;
+}
+.works-container-rhs {
+	width: 100%;
+}
+.work .project-card .name {
+	font-size: 1rem;
+}
+.work .project-card {
+	font-size: 0.75rem;
+	padding: 0 5%;
+}
+#damn .project-card {
+	padding: 0 1%;
+}
+#plauto .project-card {
+	padding: 0 1%;
+}
+
+}
