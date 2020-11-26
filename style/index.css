@@ -113,6 +113,12 @@ a {
 	font-size: 	3rem;
 }
 
+.section-sub-heading {
+	font-family: 'Lexend Peta', sans-serif;
+	font-size: 	1.5rem;
+	margin-top: 3rem
+}
+
 .about {
 	padding: 10vh 8vw;
 	text-align: justify; 
