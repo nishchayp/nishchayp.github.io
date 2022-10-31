@@ -71,6 +71,20 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
+window.onscroll = function () {
+  if (document.body.scrollTop > window.innerHeight*0.75 || document.documentElement.scrollTop > window.innerHeight*0.75) {
+    document.getElementById("long-form-logo").style.display = "none";
+    document.getElementById("short-form-logo").style.display = "flex";
+    document.getElementById("long-form-menu").style.display = "none";
+    document.getElementById("short-form-menu").style.display = "flex";
+  } else {
+    document.getElementById("long-form-logo").style.display = "flex";
+    document.getElementById("short-form-logo").style.display = "none";
+    document.getElementById("long-form-menu").style.display = "flex";
+    document.getElementById("short-form-menu").style.display = "none";
+  }
+}
+
 //toggle navmenu
 function openNavmenu() {
 var x = document.getElementById("navmenu");

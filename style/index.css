@@ -26,6 +26,9 @@ a {
     font-size: 1.5rem;
     z-index: 100;
 }
+.navbar .short-form {
+	display: none;
+}
 .navbar button {
 	background-color: rgba(255, 255, 255, 0);
 	border: none;
